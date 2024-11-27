@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: karma, sans-serif;
+}
+
+/* General header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+
+
+/* Hidden navigation menu */
+#nav-menu {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 200px;
+}
+
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+#nav-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+#nav-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  fill: black; 
+} 
+
+#food .food-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Adjust spacing between items */
+  padding: 0 200px;
+  margin-top: 100px;
+}
+
+.food-item {
+  text-align: center;
+  padding: 15px;
+  
+}
+
+.food-item img {
+  width: 100%; /* Ensures images are responsive */
+  height: auto;
+}
+
+.food-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.food-item p {
+  font-size: 0.9rem;
+  color: #555;
+}
