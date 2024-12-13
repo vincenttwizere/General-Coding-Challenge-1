@@ -67,7 +67,6 @@ header {
   
 } 
 
-
 #food, .food-conteiner {
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +80,7 @@ header {
 }
 
 .food-item img {
-  width: 271.984375px; /* Ensures images are responsive */
+  width: 271.984375px; 
   height: auto;
 }
 
@@ -97,8 +96,8 @@ header {
 
 /* Section Styles */
 #food {
-  padding: 50px 20px; /* Padding around the section */
-  /* background-color: #f8f8f8; */
+  padding: 50px 20px;
+
 }
 
 .food-container {
@@ -146,32 +145,109 @@ header {
 
 #pagination a{
   display: inline-block;
-  padding: 5px 10px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  margin: 0 5px;
+  padding: 8px 16px;
   text-decoration: none;
   color: #333;
-  border-radius: 4px;
 }
+.active{
+  background-color: black;
+  color: #fff;
+}
+
+#pagination a:hover{
+  background-color: black;
+  color: #fff;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .food-item {
-    flex: 0 0 calc(33.33% - 20px); /* Three items per row */
+    flex: 0 0 calc(33.33% - 20px); 
     max-width: calc(33.33% - 20px);
   }
 }
 
 @media (max-width: 768px) {
   .food-item {
-    flex: 0 0 calc(50% - 20px); /* Two items per row */
+    flex: 0 0 calc(50% - 20px); 
     max-width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .food-item {
-    flex: 0 0 100%; /* One item per row */
+    flex: 0 0 100%; 
     max-width: 100%;
   }
+}
+
+/*  other sections */
+#about{
+  padding: 15px;
+}
+#about h3{
+text-align: center;
+padding: 5px;
+margin: 30px 10px;
+}
+#about img{
+width: 70%;
+margin-left: 15%;
+}
+.about-text{
+  padding: 50px 0px;
+  text-align: center;  
+  margin: 10px 100px;
+  border-bottom: 2px solid #ddd;
+} 
+.footer-container{
+  display: flex;
+  padding: 30px 10px;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0px 60px;
+
+}
+.footer,.blogp, .popular{
+  
+  width: 550px;
+  padding: 8px;
+}
+.blogp img{
+width: 30%;
+display: flex;
+
+}
+#footer,#blog,#pt{
+  padding: 10px;
+}
+#tf, #tb, #pt, #fl{
+  padding: 10px;
+}
+a{
+  color: black;
+  text-decoration: underline;
+}
+
+.tool,.plane{
+
+  display: flex;
+  width: 70%;
+  margin: 20px;
+}
+span{
+  background-color: rgb(85, 81, 81);
+ line-height: 40px;
+ color: aliceblue;
+ padding: 5px;
+}
+#text{
+  margin: 0px 10px;
+}
+
+.popular p{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  
 }
